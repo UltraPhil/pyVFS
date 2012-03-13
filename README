@@ -29,6 +29,18 @@ What I'm planning to support:
 		- Google Docs
 		- Googel mail?
 		- CloudApp?
+Other features?
+---------------
+I thought of maybe adding a "Monitor" class.
+That class would be responsible to monitor changes to a file system (periodically on a remote file system, maybe constantly on a local one?) and you could simply override it like so:
+
+`Class MyDummyFileSystemMonitor(pyVFS.Monitor):
+	define onChange(self, path):
+		print "Path %s was changed!" % repr(path)
+
+monitor = MyDummyFileSystemMonitor('/etc/important/config/file')`
+
+I'm still thinking about it.
 
 Links & Inspirations
 --------------------
