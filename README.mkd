@@ -4,7 +4,6 @@ pyVFS
 What is pyVFS?
 --------------
 I'm trying to make a pythonic module to mount all kind of format as virtual filesystem mountpoints internally in a application.
-
 It's my first attempt to make an OpenSource project.
 
 What I'm planning to support:
@@ -29,18 +28,13 @@ What I'm planning to support:
 		- Google Docs
 		- Googel mail?
 		- CloudApp?
+		- DropBox?
+
 Other features?
 ---------------
 I thought of maybe adding a "Monitor" class.
-That class would be responsible to monitor changes to a file system (periodically on a remote file system, maybe constantly on a local one?) and you could simply override it like so:
-
-`Class MyDummyFileSystemMonitor(pyVFS.Monitor):
-	define onChange(self, path):
-		print "Path %s was changed!" % repr(path)
-
-monitor = MyDummyFileSystemMonitor('/etc/important/config/file')`
-
-I'm still thinking about it.
+That class would be responsible to monitor changes to a file system, either at specified intervals, or constantly.
+That'll be to determine in a near future.
 
 Links & Inspirations
 --------------------
