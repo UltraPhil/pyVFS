@@ -1,0 +1,44 @@
+pyVFS
+=====
+
+What is pyVFS?
+--------------
+I'm trying to make a pythonic module to mount all kind of format as virtual filesystem mountpoints internally in a application.
+
+It's my first attempt to make an OpenSource project.
+
+What I'm planning to support:
+- localy:
+	- raw file
+	- "big" files
+	- compressed files:
+		- zip
+		- tar
+		- gzip
+		- etc
+	- raw partitions
+	- basic partitions like fat32
+	- ZFS vdevs?
+
+- externally:
+	- FTP
+	- HTTP
+		- Web servers "default content listing" pages
+	- Webdav
+	- Others:
+		- Google Docs
+		- Googel mail?
+		- CloudApp?
+
+Links & Inspirations
+--------------------
+
+Those links principally inspired me to start this project:
+
+	- http://wiki.python.org/moin/CodingProjectIdeas/FileSystemVirtualization
+	- http://www.python.org/dev/peps/pep-0009/
+	- http://wiki.tcl.tk/2466
+	- http://wiki.tcl.tk/12832
+	- http://wiki.tcl.tk/11938
+	- https://bitbucket.org/morgul/pyvfs
+	- http://docs.python.org/dev/howto/pyporting.html#use-3to2
