@@ -34,7 +34,6 @@ Other features?
 ---------------
 I thought of maybe adding a "Monitor" class.
 That class would be responsible to monitor changes to a file system, either at specified intervals, or constantly.
-That'll be to determine in a near future.
 
 Links & Inspirations
 --------------------
