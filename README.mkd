@@ -8,9 +8,11 @@ It's my first attempt to make an OpenSource project.
 
 What I'm planning to support:
 - localy:
+	- RAM
 	- raw file
 	- "big" files
 	- compressed files:
+		(one type (compressed), many "handlers")
 		- zip
 		- tar
 		- gzip
@@ -32,8 +34,8 @@ What I'm planning to support:
 
 Other features?
 ---------------
-I thought of maybe adding a "Monitor" class.
-That class would be responsible to monitor changes to a file system, either at specified intervals, or constantly.
+I thought of maybe adding a "Monitor" feature.
+It would be responsible to monitor changes to a file system, either at specified intervals, or constantly, and trigger an event on the filesystem.
 
 Links & Inspirations
 --------------------
